@@ -8,6 +8,8 @@
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
+    "test-button": "cd . && ng test button",
+    "build-button": "cd . && ng build button",
     "pack_button": "cd dist/button && npm pack",
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook"
@@ -24,8 +26,7 @@
     "@angular/router": "~8.2.0",
     "rxjs": "~6.4.0",
     "tslib": "^1.10.0",
-    "zone.js": "~0.9.1",
-    "button": "latest"
+    "zone.js": "~0.9.1"
   },
   "devDependencies": {
     "@angular-devkit/build-angular": "~0.802.2",

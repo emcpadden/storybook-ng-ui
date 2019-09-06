@@ -4,7 +4,7 @@ import { Component, OnInit, Input } from '@angular/core';
   selector: 'ui-button',
   template: `
     <p>
-      button works!
+      button works!!! 
     </p>
     <hr />
     <button [disabled]="disabled">{{text}}</button>

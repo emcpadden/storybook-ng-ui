@@ -1,14 +1,14 @@
 import { storiesOf, moduleMetadata } from '@storybook/angular';
-import { ButtonModule, ButtonComponent } from 'button';
+import { ButtonModule } from '../../projects/button/src/lib/button.module';
+import { ButtonComponent } from '../../projects/button/src/lib/button.component'
 import { Welcome } from '@storybook/angular/demo';
 
 storiesOf('button', module)
-// .addDecorator(
-//     moduleMetadata({
-//     //     declarations: [ButtonComponent],
-//       imports: [ButtonModule]
-//     })
-//   )
+.addDecorator(
+    moduleMetadata({
+      imports: [ButtonModule]
+    })
+  )
   .add('standard', () => ({
     component: Welcome,
     props: {},
